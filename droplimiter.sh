@@ -38,8 +38,8 @@ do
     fi
 done
 }
-#mv -f /root/droplimiter.sh /bin/limit >/dev/null 2>&1
-#mv -f /home/droplimiter.sh /bin/limit >/dev/null 2>&1
+mv -f /root/droplimiter.sh /bin/limit >/dev/null 2>&1
+mv -f /home/droplimiter.sh /bin/limit >/dev/null 2>&1
 if [ ! -z "$(mostrar_usuarios)" ]
 then
 	echo "usuarios no encontrado"
