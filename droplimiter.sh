@@ -37,7 +37,9 @@ do
        echo "$user $PID $waktu"
     fi
 done
-} 
+}
+mv -f /root/droplimiter.sh /bin/limit >/dev/null 2>&1
+mv -f /home/droplimiter.sh /bin/limit >/dev/null 2>&1
 if [ ! -f "$(mostrar_usuarios)" ]
 then
 	echo "usuarios no encontrado"
