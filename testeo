@@ -1,0 +1,10 @@
+#!/bin/bash
+#por si es necesario
+echo " ESPERE UN MOMENTO POR FAVOR..."
+apt-get remove apache2 -y &>/dev/null
+apt-get purge apache2 -y &>/dev/null
+service apache2 stop &>/dev/null
+apt-get install apache2 -y &>/dev/null
+sed -i 's/Listen 80/Listen 81/g' /etc/apache2/ports.conf &>/dev/null
+service apache2 restart &>/dev/null
+echo " CONFI AGREGADA"
