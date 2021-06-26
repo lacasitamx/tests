@@ -88,11 +88,12 @@ msg -bar
 msg -azu "PUERTOS REDEFINIDOS"
 msg -bar
 }
-puertos_ver
 main_fun () {
+clear
 msg -bar2
 msg -ama "                EDITAR PUERTOS ACTIVOS"
 msg -bar2
+puertos_ver
 unset newports
 i=0
 while read line; do
