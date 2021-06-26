@@ -88,6 +88,8 @@ msg -bar
 msg -azu "PUERTOS REDEFINIDOS"
 msg -bar
 }
+clear
+clear
 main_fun () {
 clear
 msg -bar2
